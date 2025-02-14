@@ -7,7 +7,6 @@ public class BubbleSort {
 	public static void main(String[] args) {
 		// Initialize the array with a length of 25
 		int[] array = new int[25];
-		boolean isSorted = false;
 		
 		// Generate 25 random integers with values between 1 and 1000
 		Random rand = new Random();
@@ -16,16 +15,16 @@ public class BubbleSort {
 		}
 		
 		// Print the array before it is sorted
-		printArray(array, isSorted);
+		printArray(array, false);
 		
 		// Sort the array
-		isSorted = bubbleSort(array);
+		bubbleSort(array);
 		
 		// Print the array after it is sorted
-		printArray(array, isSorted);
+		printArray(array, true);
 	}
 	
-	public static boolean bubbleSort(int[] array) {
+	public static void bubbleSort(int[] array) {
 		int i = 0;
 		int j = 0;
 		int temp;
@@ -40,8 +39,6 @@ public class BubbleSort {
 				}
 			}
 		}
-		// Set isSorted to true so printArray() knows if the array has been sorted or not
-		return true;
 	}
 	
 	public static void printArray(int[] array, boolean isSorted) {
