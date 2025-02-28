@@ -1,3 +1,5 @@
+// Susan Meinhardt
+// Chpt4 PA
 // Define a Node class to represent each element in the list
 class Node {
     int data;
@@ -238,9 +240,9 @@ public class LinkedList {
 		System.out.println("The sum of the lists data values is: " + list.sumDataValues());
 		
 		// Add elements to the list
-        list.listAppend(10);
-        list.listAppend(20);
-        list.listPrepend(30);
+		list.listAppend(10);
+		list.listAppend(20);
+		list.listPrepend(30);
 		list.listInsertAfter(30, 40);
 		list.listInsertAfter(20, 50);
 		list.listInsertAfter(10, 60);
@@ -248,7 +250,7 @@ public class LinkedList {
 		
 		// Display list
 		System.out.print("List: ");
-        list.listTraverse();
+		list.listTraverse();
 		
 		// Remove elements from the list
 		list.listRemoveNodeAfter(null);
@@ -260,7 +262,7 @@ public class LinkedList {
 		
 		// Display list
 		System.out.print("List: ");
-        list.listTraverse();
+		list.listTraverse();
 		
 		// Search for nodes and display if it was found or not
 		if (list.listSearch(50) != null) {
@@ -278,9 +280,9 @@ public class LinkedList {
 		// Sort list 
 		list.listInsertionSortSinglyLinked();
 
-        // Print list after sorting
-        System.out.print("Sorted list: ");
-        list.listTraverse();
+        // Print list after sorting	
+		System.out.print("Sorted list: ");
+		list.listTraverse();
 		
 		// Add list together
 		System.out.println("The sum of the lists data values is: " + list.sumDataValues());
