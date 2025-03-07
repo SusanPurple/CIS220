@@ -1,3 +1,5 @@
+// Susan Meinhardt
+// Chpt5 PA
 // Define a Node class to represent each element in the queue
 class Node {
     int data;
